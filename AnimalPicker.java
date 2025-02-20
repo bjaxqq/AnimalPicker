@@ -10,10 +10,20 @@ public class AnimalPicker {
 			    String animal = scanner.nextLine();
 
 			    if (animal.equalsIgnoreCase("dog")) {
-			        System.out.println("DOG ASCII");
+			        System.out.println(
+                    	"  / \\__\n" +
+                    	" (    @\\___\n" +
+                    	" /         O\n" +
+                    	"/   (_____/\n" +
+                    	"/_____/   U\n"
+               		);
 			        break;
 			    } else if (animal.equalsIgnoreCase("cat")) {
-			        System.out.println("CAT ASCII");
+			        System.out.println(
+                    	"  /\\_/\\\n" +
+                    	" ( o.o )\n" +
+                    	"  > ^ <\n"
+                	);
 			        break;
 			    } else {
 			        System.out.println("Error: Invalid option! Please choose 'dog' or 'cat'.");
