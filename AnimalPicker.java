@@ -6,7 +6,7 @@ public class AnimalPicker {
 			System.out.println("Welcome to the Animal Picker!");
 
 			while (true) {
-			    System.out.println("Which animal do you want to see, a dog, a cat, or a fish?: ");
+			    System.out.println("Which animal do you want to see, a dog, a cat, a fish, or a camel?: ");
 			    String animal = scanner.nextLine();
 
 			    if (animal.equalsIgnoreCase("dog")) {
@@ -32,6 +32,10 @@ public class AnimalPicker {
 						"  ><> ><> ><>     \n" +
 						" ><><><><><><>    \n"
 					);
+					break;
+				}
+				else if(animal.equalsIgnoreCase("camel")){
+					System.out.println(" ___.-\'\'\'\'-.\n/___  @    |\n\',,,,.     |         _.\'\'\'\'\'\'\'._\n     \'     |        /           \\\n     |     \\    _.-\'             \\\n     |      \'.-\'                  \'-.\n     |                               \',\n     |                                \'\',\n      \',,-,                           \':;\n           \',,| ;,,                 ,\' ;;\n              ! ; !\'\',,,\',\',,,,\'!  ;   ;:\n             : ;  ! !       ! ! ;  ;   :;\n             ; ;   ! !      ! !  ; ;   ;,\n            ; ;    ! !     ! !   ; ;     \n            ; ;    ! !    ! !     ; ;\n           ;,,      !,!   !,!     ;,;\n           /_I      L_I   L_I     /_I\n");
 					break;
 			    } else {
 			        System.out.println("Error: Invalid option! Please choose 'dog', 'cat', or 'fish'.");
